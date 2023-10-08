@@ -12,16 +12,14 @@
         android:theme="@style/Theme.Tugas_fudamental"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
+            android:name=".Fragment.tesMainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Internt.MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".loginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Internt.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

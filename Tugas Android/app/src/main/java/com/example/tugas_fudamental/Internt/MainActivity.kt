@@ -1,10 +1,12 @@
-package com.example.tugas_fudamental
+package com.example.tugas_fudamental.Internt
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import com.example.tugas_fudamental.Fragment.tesMainActivity
+import com.example.tugas_fudamental.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -14,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var edtpekerjaan: EditText
 
     lateinit var btn:Button
+    lateinit var btn_fragment : Button
     val dataBase: FirebaseDatabase = FirebaseDatabase.getInstance()
     val reference: DatabaseReference = dataBase.reference.child("Users")
 
@@ -25,8 +28,11 @@ class MainActivity : AppCompatActivity() {
         edtumur = findViewById(R.id.umur)
         edtpekerjaan = findViewById(R.id.pekerjaan)
         btn = findViewById(R.id.btn_simpan)
+        btn_fragment = findViewById(R.id.btn_fragment)
 
-        val intent = Intent(this,MainActivity2::class.java)
+        val intent = Intent(this, MainActivity2::class.java)
+        val intent1 = Intent(this, tesMainActivity ::class.java)
+
 
         btn.setOnClickListener {
             val nama = edtnama.text.toString()
@@ -38,6 +44,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
 
+        }
+
+        btn_fragment.setOnClickListener {
+            startActivity(intent1)
         }
 
     }
