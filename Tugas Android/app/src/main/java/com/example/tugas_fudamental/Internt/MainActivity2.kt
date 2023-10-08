@@ -1,8 +1,9 @@
-package com.example.tugas_fudamental
+package com.example.tugas_fudamental.Internt
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.tugas_fudamental.R
 import com.google.firebase.database.*
 
 class MainActivity2 : AppCompatActivity() {
@@ -10,8 +11,8 @@ class MainActivity2 : AppCompatActivity() {
     lateinit var textumur: TextView
     lateinit var textpekerjaan: TextView
 
-    val dataBase: FirebaseDatabase = FirebaseDatabase.getInstance()
-    val referenceGetData: DatabaseReference = dataBase.reference
+    private val dataBase: FirebaseDatabase = FirebaseDatabase.getInstance()
+    private val referenceGetData: DatabaseReference = dataBase.reference
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
