@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "47932596868",
+    "project_id": "tugas-fudamental",
+    "storage_bucket": "tugas-fudamental.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47932596868:android:d7a508dbc9abf6b77cd8d1",
+        "android_client_info": {
+          "package_name": "com.example.tugas_fudamental"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuTa3I2qpeGViUlFlYIDMEwy3e3HeNGc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
